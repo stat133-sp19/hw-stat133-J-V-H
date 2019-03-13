@@ -1,6 +1,6 @@
 # Demo
 
-This is just a demo folder with some dummy content.
+Look ma' I did it!
 
 A quote:
 
