@@ -7,6 +7,7 @@ data in this project, and a brief verview of the topic and sources of
 the relevant data.
 
 *TOPIC*
+
 The topic of this __Workout__ is the success of the Bay Area's Golden State Warriors and their success. 
 
 *DATA*
