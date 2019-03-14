@@ -1,20 +1,15 @@
-# Stat 133, Spring 2019
+READ ME for Workout 01 - Stat 133
+=================================
 
-Private Repository for HW assignments of Stat 133 (Spring 2019)
+This is the Read Me for the first workout, below is a description of the
+data in this project, and a brief verview of the topic and sources of
+the relevant data.
 
-- Name: Joseph Hernandez
-- Github username: J-V-H
-- Email: jhernandez@berkeley.edu
-- Lab section: 112
-- GSI: Shuni
+*TOPIC*
+The topic of this __Workout__ is the success of the Bay Area's Golden State Warriors and their success. 
 
------
+*DATA*
+*The data for this project is a group of shooting records for the five 2016 Golden State Warriors starters, Steph Curry, Andre Iguodala, Draymond Green, Kevin Durant, and Klay Thompson. It includes information on the shots' distance, time, type, shooter, and many other variables.  
 
-## Assignments
-
-- [Demo](demo)
-- [Workout 1](workout1)
-- Workout 2
-- Workout 3
-
-
+*ASSIGNMENT*
+The assignment consists of doing data cleaning tasks, creating dataframes from what is given, generating shot charts, building tables with dplyr, and finally writing a hypothetical article for an Oakland sports news site with the charts and tables built over the course of the __Workout__. 
