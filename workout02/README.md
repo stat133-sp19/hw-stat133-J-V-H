@@ -13,7 +13,8 @@ Also, below the sliders and the graph of the simulation a table is given of the 
 
 The *default* values for the simulation when the app is first open are an initial investment of $1000, rate of return of 5%, length of time of 20 years, contribution of \$2000, a growth rate of 2%, and faceting turned off. 
 
-###Numeric Variables, Min and Max:
+
+**Numeric Variables, Min and Max:**
 
 Initial Amount (in dollars):
 
