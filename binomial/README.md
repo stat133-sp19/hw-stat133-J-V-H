@@ -6,7 +6,7 @@
 
 Essentially, this package offers functions to calcualte distributions, measures, cumulative distributions, variables, and combinations from given trials, successes, and probabilities according to a binomial random distribution. 
 
-#####The exported, public functions in this package are: 
+##### The exported, public functions in this package are: 
 
 * bin_choose() - takes inputs n and k 
 * bin_probability() - takes inputs success, trials, prob
@@ -19,7 +19,7 @@ Essentially, this package offers functions to calcualte distributions, measures,
 
 The package also includes auxilary and checker functions. 
 
-#####The inputs are: 
+##### The inputs are: 
 
 * trials (n)
 * prob (p)
