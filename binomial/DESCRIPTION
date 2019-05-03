@@ -1,0 +1,16 @@
+Package: binomial
+Type: Package
+Title: Binomial Distributions & Variables 
+Version: 0.1.0
+Author: Joseph Hernandez
+Maintainer: Joseph Hernandez <jhernandez@berkeley.edu>
+Description: This package includes functions that return distributions according to binomial theorem, 
+    it also gives the summary statistics for binomial variables. 
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Suggests: testthat,
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr
+RoxygenNote: 6.1.1

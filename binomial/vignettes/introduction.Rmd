@@ -1,0 +1,135 @@
+---
+title: "Demonstration of Binomial"
+author: "Joseph Hernandez"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Introduction to Binomial}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+### 1. Load the Package 
+
+The binomial package is an R package with functions for calculating the probabilities of a Binomial random variable and related calculations such as the probability distribution (cumulative and not), expected value, variance, skewnness, and others. Most *binomial* functions call some combination of *trials (n)*, *prob (p)*, and *success (k)*; these correspond to the trials undergone, probability of success, and number of successes respectively. 
+
+```{r, echo=FALSE, eval = TRUE, message=FALSE}
+knitr::opts_chunk$set(collapse = T, comment = "#>")
+library(binomial)
+library(ggplot2)
+```
+
+### 2. Functions
+The following functions are part of *binomial*: 
+
+```{r eval = FALSE}
+bin_choose()       # returns number of combinations where k successes can occur in n trials
+bin_probability()  # returns the probability of k successes in n trials with a given probability
+bin_distribution() # returns distribution of the probabilities of a binomial random variable
+bin_cumulative()   # returns the cumulative distribution of the probabilities of a binomial random variable
+bin_variable()     # returns a binomial random variable and summary statistics
+bin_mean()         # returns the expected value of k and n 
+bin_mode()         # returns the mode of k and n  
+bin_variance()     # returns the variance of k and n
+bin_skewness()     # returns the skewness of k and n  
+bin_kurtosis()     # returns the kurtosis of k and n 
+```
+
+### 3. Examples and Uses 
+
+The aforementioned functions are used in the following ways: 
+
+##### bin_choose()
+
+This function returns number of combinations where k successes can occur in n trials. 
+```{r}
+bin_choose(n = 5, k = 2)
+```
+
+##### bin_probability()
+
+This function returns returns the probability of k successes in n trials with a given probability
+```{r}
+bin_probability(success = 2, trials = 5, prob = 0.5)
+```
+
+##### bin_distribution()
+
+This function returns a distribution, as a dataframe of class data.frame and *bindis*, of the probabilities of a binomial random variable.
+```{r}
+bindis1 <- bin_distribution(trials = 5, prob = 0.5)
+bindis1
+```
+
+A data.frame object of class *bindis* will become a visual plot as such: 
+```{r}
+plot(bindis1)
+```
+
+##### bin_cumulative()
+
+This function returns another type of distribution, as a dataframe of class data.frame and *bincum*, of the probabilities of a binomial random variable and the cumulative probabilities of a binomial random variable distribution.
+```{r}
+bincum1 <- bin_cumulative(trials = 5, prob = 0.5)
+bincum1
+```
+
+A data.frame object of class *bincum* will become a visual plot as such: 
+```{r}
+plot(bincum1)
+```
+
+##### bin_variable()
+
+This function returns returns a binomial random variable of class *binvar* and related summary statistics and parameters. 
+```{r}
+binvar1 <- bin_variable(trials = 5, prob = 0.5)
+binvar1
+```
+
+A *binvar* object will print as: 
+```{r}
+print(binvar1)
+```
+
+Running summary() on a *binvar* object will return a special printed output of the measures and parameters of the object: 
+```{r}
+summary(binvar1)
+```
+
+##### bin_mean()
+
+This function is a measure of the binomial random varaible that returns the variable's expected value: 
+```{r}
+bin_mean(trials = 6, prob = 0.5)
+```
+
+##### bin_mode()
+
+This function is a measure of the binomial random varaible that returns the variable's modal value: 
+```{r}
+bin_mode(trials = 6, prob = 0.5)
+```
+
+##### bin_variance()
+
+This function is a measure of the binomial random varaible that returns the variable's variance or the varaince of the expected distribution: 
+```{r}
+bin_variance(trials = 6, prob = 0.5)
+```
+
+##### bin_skewness()
+
+This function is a measure of the binomial random varaible that returns the variable's skewness or the skewness of the expected distribution: 
+```{r}
+bin_skewness(trials = 6, prob = 0.5)
+```
+
+##### bin_kurtosis()
+
+This function is a measure of the binomial random varaible that returns the variable's kurtosis or the kurtosis of the expected distribution: 
+```{r}
+bin_kurtosis(trials = 6, prob = 0.5)
+```
+
+
